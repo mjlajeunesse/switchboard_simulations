@@ -1,4 +1,4 @@
-# Quick simulations with the switchboard package for R
+# Quick simulations with the switchboard package for R  <img src="switchboard_hex.gif" align="right" height = 150/>
 #   Official website with all details here: [switchboard tutorials](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html).
 #   
 
@@ -53,7 +53,7 @@ switchboard_close()
 ------------------------------------------------------------------------
 
 ## November 18, 2022 \| effects of noise versus sampling error on regression
-See discussion on [twitter](twitter.com/LajeunesseLab/status/1593684244160688129) and [mastodon]([https://ecoevo.social/@LajeunesseLab/109445048974448685](https://ecoevo.social/@LajeunesseLab/109366465705087543).
+See discussion on [twitter](https://twitter.com/LajeunesseLab/status/1593684244160688129) and [mastodon](https://ecoevo.social/@LajeunesseLab/109366465705087543).
 
 <br> \#\#\# R code with switchboard v. 0.1
 
@@ -136,8 +136,9 @@ switchboard_close()
 ------------------------------------------------------------------------
 
 ## November 9, 2022 \| p-value dance when effect is null
+See discussion on [twitter](https://twitter.com/LajeunesseLab/status/1590405834059968513) and [mastodon](https://ecoevo.social/@LajeunesseLab/109315310837150463).
 
-\#\#\# R code with switchboard v. 0.1
+<br> \#\#\# R code with switchboard v. 0.1
 
 ``` r
 library(switchboard)
@@ -170,8 +171,9 @@ switchboard_close()
 ------------------------------------------------------------------------
 
 ## November 4, 2022 \| dance of regression with small sample sizes
+See discussion on [twitter](https://twitter.com/LajeunesseLab/status/1588545221830201344).
 
-\#\#\# R code with switchboard v. 0.1
+<br> \#\#\# R code with switchboard v. 0.1
 
 ``` r
 library(switchboard)
