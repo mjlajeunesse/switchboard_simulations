@@ -1,9 +1,12 @@
 ## Quick simulations with the switchboard package for R
+# Official website with all details here: [http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html).
 
 
 ------------------------------------------------------------------------
 
 ## December 2, 2022 \| correlation without causation via collider bias
+See discussion on [https://twitter.com/LajeunesseLab/status/1598709472125685760](twitter) and [https://ecoevo.social/@LajeunesseLab/109445048974448685](mastodon).
+
 
 <br> <br> \#\#\# R code with switchboard v. 0.1
 
