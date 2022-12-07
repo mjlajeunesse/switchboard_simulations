@@ -1,4 +1,4 @@
-# Quick simulations with the switchboard package for R [(official website here)](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html)    
+## Quick simulations with the switchboard package for R [(official website here)](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html) <img src="switchboard_hex.gif" align="right" height = 150/>   
 
 ------------------------------------------------------------------------
 
