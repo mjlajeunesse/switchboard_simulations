@@ -1,14 +1,13 @@
-## Quick simulations with the switchboard package for R
-# Official website with all details here: [http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html).
+## Quick simulations with the switchboard package for R | Marc Lajeunesse
+# Official website with all details here: [switchboard tutorials](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html).
 
 
 ------------------------------------------------------------------------
 
 ## December 2, 2022 \| correlation without causation via collider bias
-See discussion on [https://twitter.com/LajeunesseLab/status/1598709472125685760](twitter) and [https://ecoevo.social/@LajeunesseLab/109445048974448685](mastodon).
+See discussion on [twitter](https://twitter.com/LajeunesseLab/status/1598709472125685760) and [mastodon](https://ecoevo.social/@LajeunesseLab/109445048974448685).
 
-
-<br> <br> \#\#\# R code with switchboard v. 0.1
+<br> \#\#\# R code with switchboard v. 0.1
 
 ``` r
 library(switchboard)
@@ -54,8 +53,9 @@ switchboard_close()
 ------------------------------------------------------------------------
 
 ## November 18, 2022 \| effects of noise versus sampling error on regression
+See discussion on [twitter](twitter.com/LajeunesseLab/status/1593684244160688129) and [mastodon]([https://ecoevo.social/@LajeunesseLab/109445048974448685](https://ecoevo.social/@LajeunesseLab/109366465705087543).
 
-<br> <br> \#\#\# R code with switchboard v. 0.1
+<br> \#\#\# R code with switchboard v. 0.1
 
 ``` r
 library(switchboard)
