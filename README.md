@@ -44,7 +44,7 @@ for(simulation_length in 1:20000) {
 
  switchboard() %>%
    caption(c("Monte Carlo estimate of \U03C0",
-             "If you count the number of random points falling within a circle enclosed by a unit square, then 4 * enclosed / total randoms will aproximate \U03C0."),
+             "If you count the number of random points falling within a circle enclosed by a unit square, then 4 * enclosed / total randoms will approximate \U03C0."),
            placeOnGrid = c(0, 0), extendRow = 3, size = 1.5) %>%
    eavesdropper_2D(c(X, Y), minimum = c(0, 0), maximum = c(200, 200), size = 2,
                    placeOnGrid = c(6, 0),  forget = forgetTimeCircle) %>%
