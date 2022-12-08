@@ -22,7 +22,7 @@ getPolygonOfImage <- function(anImageFile, rotate = 0) {
 poly_circle <- getPolygonOfImage("circle.png")
 poly_jigglypuff <- getPolygonOfImage("jigglypuff.png", 180)
 poly_jigglypuffEye1 <- getPolygonOfImage("jigglypuff_eye1.png", 180)
-poly_jigglypuffEye2 <- getPolygonOfImage("jigglypuff_eye1.png", 180)
+poly_jigglypuffEye2 <- getPolygonOfImage("jigglypuff_eye2.png", 180)
 
 insideCircle <- 0; insideJiggly <- 0;
 
