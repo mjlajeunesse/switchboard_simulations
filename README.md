@@ -1,5 +1,66 @@
 ## Quick simulations with the switchboard package for R [(official website click here)](http://lajeunesse.myweb.usf.edu/switchboard/LajeunesseLab_quick_switchboard_simulations.html) <img src="switchboard_hex.gif" align="right" height = 150/>   
 
+
+------------------------------------------------------------------------
+
+## December 8, 2022 \| Monte Carlo estimation of pi using circle vs jigglypuff area
+
+<br> <br> \#\#\# R code with switchboard v. 0.1
+
+``` r
+library(switchboard)
+library(EBImage)
+library(sp)
+
+set.seed(19)
+
+getPolygonOfImage <- function(anImageFile, rotate = 0) {
+ anImage <- EBImage::resize(EBImage::readImage(anImageFile), w = 201, h = 201)
+ return(EBImage::ocontour(EBImage::rotate(anImage, rotate)))
+}
+
+poly_circle <- getPolygonOfImage("circle.png")
+poly_jigglypuff <- getPolygonOfImage("jigglypuff.png", 180)
+poly_jigglypuffEye1 <- getPolygonOfImage("jigglypuff_eye1.png", 180)
+poly_jigglypuffEye2 <- getPolygonOfImage("jigglypuff_eye1.png", 180)
+
+insideCircle <- 0; insideJiggly <- 0;
+
+for(simulation_length in 1:20000) {
+
+ forgetTimeCircle <- 600; forgetTimeJiggly <- 600;
+ X <- runif(1, min = 0, max = 200); Y <- runif(1, min = 0, max = 200);
+
+ if(sp::point.in.polygon(X, Y, poly_jigglypuff[[1]][, 1], poly_jigglypuff[[1]][, 2])) {
+  if((!sp::point.in.polygon(X, Y, poly_jigglypuffEye1[[1]][, 1], poly_jigglypuffEye1[[1]][, 2])) &&
+     (!sp::point.in.polygon(X, Y, poly_jigglypuffEye2[[1]][, 1], poly_jigglypuffEye2[[1]][, 2]))) {
+    insideJiggly <- insideJiggly + 1; forgetTimeJiggly <- 50000;
+  }
+ }
+
+ if(sp::point.in.polygon(X , Y, polyCircle[[1]][, 1], polyCircle[[1]][, 2])) {
+   insideCircle <- insideCircle + 1; forgetTimeCircle <- 50000;
+ }
+
+ switchboard() %>%
+   caption(c("Monte Carlo estimate of \U03C0",
+             "If you count the number of random points falling within a circle enclosed by a unit square, then 4 * enclosed / total randoms will aproximate \U03C0."),
+           placeOnGrid = c(0, 0), extendRow = 3, size = 1.5) %>%
+   eavesdropper_2D(c(X, Y), minimum = c(0, 0), maximum = c(200, 200), size = 2,
+                   placeOnGrid = c(6, 0),  forget = forgetTimeCircle) %>%
+   eavesdropper_2D(c(X, Y), minimum = c(0, 0), maximum = c(200, 200), size = 2,
+                   placeOnGrid = c(6, 2),  forget = forgetTimeJiggly) %>%
+   number(4.0 * insideCircle / simulation_length, label = "\U03C0 ~ circle",
+          placeOnGrid = c(9, 0)) %>%
+   number(4.0 * insideJiggly / simulation_length, label = "\U03C0 ~ jigglypuff",
+          placeOnGrid = c(9, 2))
+
+
+}
+switchboard_close()
+```
+
+
 ------------------------------------------------------------------------
 
 ## December 2, 2022 \| correlation without causation via collider bias
